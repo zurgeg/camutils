@@ -7,7 +7,6 @@ if __name__ == "__main__":
         if key == 27: # exit on ESC
             break
     vc.release()
-    cv2.destroyWindow("preview gray")
-    cv2.destroyWindow("preview")
+    cv2.destroyWindow("feed")
 else:
   print("There was an error.")
