@@ -1,6 +1,6 @@
 import bootloader
 if __name__ == "__main__":
-    while rval:
+    while bootloader.rval:
         cv2.imshow("feed", frame)
         rval, frame = vc.read()
         key = cv2.waitKey(20)
