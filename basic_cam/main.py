@@ -1,9 +1,7 @@
 import bootloader
 if __name__ == "__main__":
     while rval:
-        gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-        cv2.imshow("preview", frame)
-        cv2.imshow("preview gray", gray)
+        cv2.imshow("feed", frame)
         rval, frame = vc.read()
         key = cv2.waitKey(20)
         if key == 27: # exit on ESC
